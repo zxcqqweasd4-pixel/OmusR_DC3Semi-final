@@ -10,10 +10,10 @@ const { members, addMember, deleteMember, toggleStatus } = useMembers()
 <template>
   <div>
     <h1>Members Page</h1>
-    <!-- Parent listens to child emit: add-member -->
+   
     <MemberForm @add-member="addMember" />
 
-    <!-- Parent passes state via props, listens to child emits -->
+    
     <MemberList
       :members="members"
       @delete-member="deleteMember"
